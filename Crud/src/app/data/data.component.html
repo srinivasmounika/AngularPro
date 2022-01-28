@@ -1,0 +1,99 @@
+<!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold" href="#">Stocks</a>
+     
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+         
+        
+         
+         
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" [(ngModel)]="value"
+          name="searchKey" type="search" placeholder="Search" aria-label="Search"><br>
+          <button class="btn btn-outline-success" 
+           type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  
+
+  <div class="wrapper">
+    <div class="row">
+        <div class="col-md-3 mt-2 mb-3 ml-1 " *ngFor = "let stock of dates" >
+            <div class="card">
+                <div class="card-header"><h1>*STOCKS*</h1></div>
+                 <div class="card-body">
+                     <div>
+                         Open: {{ stock.open }}
+                     </div>
+                     <div>
+                        High: {{ stock.high }}
+                     </div>
+                     <div>
+                      low:{{ stock.low }}
+                  </div>
+                  <div>
+                    Close:{{ stock.close }}
+                </div>
+                 </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="col-md-4 offset-md-4 mt-4 me-0">
+<form>
+  <div class="mb-3">
+    <label for="Enter Date" class="form-label">Enter Date</label>
+    <input type="text" class="form-control" >
+    
+  </div>
+  <div class="mb-3">
+    <label for="Enter Open" class="form-label">Open</label>
+    <input type="number" class="form-control" >
+  </div>
+  <div class="mb-3">
+    <label for="Enter high" class="form-label">high</label>
+    <input type="number" class="form-control" >
+  </div>
+  <div class="mb-3">
+    <label for="Enter low" class="form-label">low</label>
+    <input type="number" class="form-control" >
+  </div>
+  <div class="mb-3">
+    <label for="Enter Close" class="form-label">Close</label>
+    <input type="number" class="form-control" >
+  </div>
+  
+  <button type="submit" class="btn btn-primary ms-2" >Post</button>
+  <button type="submit" class="btn btn-primary ms-2" >Update</button>
+  <button type="submit" class="btn btn-primary ms-2" >Delete</button>
+</form>
+</div> -->
+
+<table class="table border border-dark" >
+    <tr>
+        <th>sl.no</th>
+        <th>Name</th>
+        <th>Brand</th>
+        <th>Price</th>
+    </tr>
+    <tr *ngFor="let product of products;index as i">
+        <td>{{i+1}}</td>
+        <td>{{product.productName}}</td>
+        <td>{{product.productBrand}}</td>
+        <td>{{product.price}}</td>
+    </tr>
+    </table>
+    <input type="text" placeholder="enter Id" [(ngModel)]="id"><br>
+    <input type="text" placeholder="enter Name" [(ngModel)]="name"><br>
+    <input type="text" placeholder="enter Brand" [(ngModel)]="brand"><br>
+    <input type="text" placeholder="enter Price" [(ngModel)]="price"><br>
+    <button (click)="addProduct()">AddProduct</button><br>
+    <button (click)="updateProduct()">updateProduct</button>
+
+    <button (click)="deleteProduct()">deleteProduct</button>

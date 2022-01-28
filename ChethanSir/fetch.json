@@ -1,0 +1,17 @@
+{
+    "items" :[
+        {
+            "movieName":"Pushpa",
+            "Collection":"100Cr",
+            "Hero":"Allu Arjun"
+
+        },
+        {
+            "movieName":"Akhanda",
+            "Collection":"i don't know",
+            "Hero":"Jai Balayya"
+            
+        }
+        
+    ]
+}

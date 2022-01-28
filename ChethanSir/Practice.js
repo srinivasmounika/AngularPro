@@ -1,0 +1,11 @@
+var arr=['laddu','gulabjamun','rassagulla','chumchum','jilebi','rasmalai'];
+console.log(arr.join('/'));
+console.log(arr.slice(-3,-1));
+console.log(arr.slice(2,4));
+console.log(arr.splice(1,2,'robo'));
+console.log(arr);
+console.log(arr.shift());
+console.log(arr);
+console.log(arr.indexOf('roja'));
+console.log(arr.push('kalajamun','gobi'));
+console.log(arr.pop());

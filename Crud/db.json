@@ -1,0 +1,28 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "productName": "ksvdkvsakd",
+      "productBrand": "Fvdjsvajd",
+      "price": 348
+    },
+    {
+      "id": 2,
+      "productName": "jhvdsshavdjvadsjvjds",
+      "productBrand": "edutsf",
+      "price": 343
+    },
+    {
+      "id": 3,
+      "productName": "hdfsufyusdf",
+      "productBrand": "iidudiuahd",
+      "price": 34538583
+    },
+    {
+      "id": 5,
+      "productName": "fdvfdv",
+      "productBrand": "fvdfv",
+      "price": "32"
+    }
+  ]
+}
